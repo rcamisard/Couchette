@@ -26,7 +26,7 @@ public class EnumerationController {
 
     @GetMapping("/lieux")
     public ResponseEntity<List<Lieu>> getAllLieux() {
-        return new ResponseEntity(enumerationService.getAllLieux(), HttpStatus.OK);
+        return new ResponseEntity<>(enumerationService.getAllLieux(), HttpStatus.OK);
     }
 
     @GetMapping("/typesRencontre")
