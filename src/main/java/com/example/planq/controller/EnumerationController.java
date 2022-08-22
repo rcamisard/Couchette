@@ -31,16 +31,16 @@ public class EnumerationController {
 
     @GetMapping("/typesRencontre")
     public ResponseEntity<List<TypeRencontre>> getAllTypesRencontre(){
-        return new ResponseEntity<>(enumerationService.getAllTypesRencontre(), HttpStatus.OK);
+        return new ResponseEntity<List<TypeRencontre>>(enumerationService.getAllTypesRencontre(), HttpStatus.OK);
     }
 
     @GetMapping("/pratiques")
     public ResponseEntity<List<Pratique>> getAllPratiques(){
-        return new ResponseEntity<>(enumerationService.getAllPratiques(), HttpStatus.OK);
+        return new ResponseEntity<List<Pratique>>(enumerationService.getAllPratiques(), HttpStatus.OK);
     }
 
     @GetMapping("/genres")
     public ResponseEntity<List<Genre>> getAllGenres(){
-        return new ResponseEntity<>(enumerationService.getAllGenres(), HttpStatus.OK);
+        return new ResponseEntity<List<Genre>>(enumerationService.getAllGenres(), HttpStatus.OK);
     }
 }
